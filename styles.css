@@ -1,0 +1,40 @@
+/* from inside out, padding -> border -> margin */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* includes padding and border in total width/height */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6; /* spacing between lines */
+  max-width: 1200px; /* to be adjusted later */
+  margin: 0 auto; /* top, bottom, left, right */
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px; /* separate header and text */
+}
+
+section {
+  margin-bottom: 40px; /* separate sections */
+}
+
+h2 {
+  margin-bottom: 20px; /* separate header and text */
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid #eee; /* faint line */
+}
