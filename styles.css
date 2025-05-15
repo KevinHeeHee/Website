@@ -1,5 +1,9 @@
 /* from inside out, padding -> border -> margin */
 
+html, body {
+  height: 100% /* make sure they take full height */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +16,12 @@ body {
   max-width: 1200px; /* to be adjusted later */
   margin: 0 auto; /* top, bottom, left, right */
   padding: 20px;
+  display: flex;
+  flex-direction: column; /* splits evenly vertically */
+}
+
+main {
+  flex: 1; /* flex-grow and flex-shrink are 1 */
 }
 
 header {
